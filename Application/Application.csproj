@@ -16,4 +16,8 @@
     <ProjectReference Include="..\ClassLibrary1\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\LeaveType\Commands\" />
+  </ItemGroup>
+
 </Project>
