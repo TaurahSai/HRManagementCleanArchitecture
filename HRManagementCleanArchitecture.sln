@@ -13,7 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{09CFB46E-4D58-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A285BE3A-3DC6-4C0B-9ABA-2D6461D824F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "ClassLibrary1\Domain.csproj", "{EEA0ADE6-5217-4744-9E1B-3FE4890F3989}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEA0ADE6-5217-4744-9E1B-3FE4890F3989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA0ADE6-5217-4744-9E1B-3FE4890F3989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA0ADE6-5217-4744-9E1B-3FE4890F3989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA0ADE6-5217-4744-9E1B-3FE4890F3989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -21,6 +33,7 @@ Global
 		{C03B75E4-6ECB-44DF-A1F7-354950AC8763} = {AB9B14A5-FE4D-40CB-8227-971690B29370}
 		{B1264B03-78FD-4DBF-9933-637B938582F0} = {AB9B14A5-FE4D-40CB-8227-971690B29370}
 		{09CFB46E-4D58-4C8A-9D08-CFC1525A7F00} = {AB9B14A5-FE4D-40CB-8227-971690B29370}
+		{EEA0ADE6-5217-4744-9E1B-3FE4890F3989} = {C03B75E4-6ECB-44DF-A1F7-354950AC8763}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DF6D04B-88CC-454E-A05F-63EA2DDAC8DD}
