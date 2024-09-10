@@ -1,5 +1,5 @@
 ﻿using Application.Features.LeaveType.Queries.GetAllLeaveTypes;
-using Application.Features.LeaveType.Queries.GetAllLeaveTypes.GetLeaveTypeDetails;
+using Application.Features.LeaveType.Queries.GetLeaveTypeDetails;
 using AutoMapper;
 using Domain;
 

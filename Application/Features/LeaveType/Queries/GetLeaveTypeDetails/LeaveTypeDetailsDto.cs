@@ -1,4 +1,4 @@
-﻿namespace Application.Features.LeaveType.Queries.GetAllLeaveTypes.GetLeaveTypeDetails;
+﻿namespace Application.Features.LeaveType.Queries.GetLeaveTypeDetails;
 
 public class LeaveTypeDetailsDto
 {
