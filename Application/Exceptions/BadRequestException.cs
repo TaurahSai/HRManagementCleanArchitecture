@@ -4,7 +4,7 @@ namespace Application.Exceptions;
 
 public class BadRequestException : Exception
 {
-    public List<string> Errors { get; set; }
+    public List<string>? Errors { get; set; }
 
     public BadRequestException(string message) : base(message)
     {
