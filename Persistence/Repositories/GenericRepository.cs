@@ -1,10 +1,11 @@
 ﻿using Application.Contracts.Persistence;
+using Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Persistence.DatabaseContext;
 
 namespace Persistence.Repositories;
 
-public class GenericRepository<T> : IGenericRepository<T> where T : class
+public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 {
     protected readonly HRDatabaseContext _context;
 
@@ -27,12 +28,12 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
 
     public async Task<IReadOnlyList<T>> GetAsync()
     {
-        return await _context.Set<T>().ToListAsync();
+        return await _context.Set<T>().AsNoTracking().ToListAsync();
     }
 
     public async Task<T> GetByIdAsync(int id)
     {
-        return await _context.Set<T>().FindAsync(id);
+        return await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(q => q.Id == id);
     }
 
     public async Task UpdateAsync(T entity)
